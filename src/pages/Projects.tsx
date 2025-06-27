@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
@@ -12,69 +13,25 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Modern Villa Paradise',
+      title: 'Srinivasan\'s',
       status: 'completed',
-      category: 'luxury',
-      location: 'Colombo Heights',
-      description: 'A stunning 4-bedroom villa featuring contemporary design with traditional Sri Lankan elements.',
-      image: '/placeholder.svg',
-      completionDate: 'March 2024',
-      area: '3,500 sq ft'
+      category: 'residential',
+      location: 'Padappai',
+      description: 'A 4-bedroom home with modern design elements and ample space for nature to thrive.',
+      image: '/src/Srinivasans.jpeg',
+      completionDate: 'June 2024',
+      area: '2,300 sq ft'
     },
     {
       id: 2,
-      title: 'Serenity Gardens Residence',
-      status: 'ongoing',
-      category: 'residential',
-      location: 'Kandy Hills',
-      description: 'Eco-friendly family home with sustainable materials and energy-efficient systems.',
-      image: '/placeholder.svg',
-      completionDate: 'Expected Dec 2024',
-      area: '2,800 sq ft'
-    },
-    {
-      id: 3,
-      title: 'Executive Townhouse',
-      status: 'completed',
-      category: 'luxury',
-      location: 'Negombo Bay',
-      description: 'Premium townhouse with ocean views and modern amenities for sophisticated living.',
-      image: '/placeholder.svg',
-      completionDate: 'January 2024',
-      area: '4,200 sq ft'
-    },
-    {
-      id: 4,
-      title: 'Harmony Family Home',
+      title: 'Laxmi\'s Home',
       status: 'planning',
       category: 'residential',
-      location: 'Galle Road',
+      location: 'Maraimalai Nagar',
       description: 'Traditional design meets modern comfort in this carefully planned family residence.',
-      image: '/placeholder.svg',
+      image: '/src/Laxmi Home.jpeg',
       completionDate: 'Planning Phase',
-      area: '3,000 sq ft'
-    },
-    {
-      id: 5,
-      title: 'Heritage Restoration',
-      status: 'ongoing',
-      category: 'renovation',
-      location: 'Fort District',
-      description: 'Restoring a colonial-era building while preserving its historical character.',
-      image: '/placeholder.svg',
-      completionDate: 'Expected Feb 2025',
-      area: '5,000 sq ft'
-    },
-    {
-      id: 6,
-      title: 'Green Valley Estate',
-      status: 'completed',
-      category: 'residential',
-      location: 'Nuwara Eliya',
-      description: 'Mountain retreat designed to blend seamlessly with the natural landscape.',
-      image: '/placeholder.svg',
-      completionDate: 'November 2023',
-      area: '2,500 sq ft'
+      area: '2,700 sq ft'
     }
   ];
 
@@ -152,12 +109,13 @@ const Projects = () => {
               {filteredProjects.map((project) => (
                 <Card key={project.id} className="overflow-hidden hover:shadow-lg transition-all duration-300 border-2 hover:border-primary/30">
                   <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/30 flex items-center justify-center">
-                    <div className="text-center">
+                    {/* <div className="text-center">
                       <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-2">
                         <div className="w-8 h-8 bg-primary rounded-lg"></div>
                       </div>
                       <p className="font-body text-sm text-muted-foreground">Project Image</p>
-                    </div>
+                    </div> */}
+                    <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
                   </div>
                   <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-3">
@@ -211,12 +169,16 @@ const Projects = () => {
             <p className="font-body text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
               Let's discuss your vision and create something extraordinary together.
             </p>
-            <Button 
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-body font-medium px-8 py-3 rounded-full"
-            >
-              Get In Touch
-            </Button>
+            <div>
+            <Link to="/contact">
+              <Button 
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-body font-medium px-8 py-3 rounded-full"
+              >
+                Get In Touch
+              </Button>
+            </Link>
+            </div>            
           </div>
         </section>
       </main>

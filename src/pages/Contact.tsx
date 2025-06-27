@@ -92,7 +92,7 @@ const Contact = () => {
                         id="phone" 
                         type="tel" 
                         className="mt-1 font-body"
-                        placeholder="+94 XX XXX XXXX"
+                        placeholder="+91 XX XXX XXXX"
                       />
                     </div>
                     
@@ -162,7 +162,7 @@ const Contact = () => {
                             href="mailto:info@srihavens.com"
                             className="font-body text-primary hover:text-primary/80 font-medium"
                           >
-                            info@srihavens.com
+                            enquiry@srihavensconstructions.com
                           </a>
                         </div>
                       </div>
@@ -170,7 +170,7 @@ const Contact = () => {
                   </Card>
 
                   {/* Phone */}
-                  <Card className="border border-border hover:border-primary/30 transition-colors">
+                  {/* <Card className="border border-border hover:border-primary/30 transition-colors">
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4">
                         <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -192,10 +192,10 @@ const Contact = () => {
                         </div>
                       </div>
                     </CardContent>
-                  </Card>
+                  </Card> */}
 
                   {/* Location */}
-                  <Card className="border border-border hover:border-primary/30 transition-colors">
+                  {/* <Card className="border border-border hover:border-primary/30 transition-colors">
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4">
                         <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -215,10 +215,10 @@ const Contact = () => {
                         </div>
                       </div>
                     </CardContent>
-                  </Card>
+                  </Card> */}
 
                   {/* Hours */}
-                  <Card className="border border-border hover:border-primary/30 transition-colors">
+                  {/* <Card className="border border-border hover:border-primary/30 transition-colors">
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4">
                         <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -236,7 +236,7 @@ const Contact = () => {
                         </div>
                       </div>
                     </CardContent>
-                  </Card>
+                  </Card> */}
                 </div>
               </div>
             </div>

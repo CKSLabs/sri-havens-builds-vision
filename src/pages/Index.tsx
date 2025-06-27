@@ -75,7 +75,7 @@ const Index = () => {
         </section>
 
         {/* Recent Projects Preview */}
-        <section className="py-16 bg-background">
+        {/* <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="font-heading text-4xl font-bold text-foreground mb-4">
@@ -128,7 +128,7 @@ const Index = () => {
               </Link>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* CTA Section */}
         <section className="py-16 bg-gradient-to-br from-primary/10 to-accent/20">
