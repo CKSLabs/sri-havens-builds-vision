@@ -22,7 +22,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src="/src/logo.jpeg" alt="Sri Havens" className="w-10 h-10" style={{ borderRadius: '50%', overflow: 'hidden'}}/>
+            <img src="/logo.jpeg" alt="Sri Havens" className="w-10 h-10" style={{ borderRadius: '50%', overflow: 'hidden'}}/>
             <div>
               <h1 className="font-heading text-2xl font-semibold text-foreground">
                 Sri Havens

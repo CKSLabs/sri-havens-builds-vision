@@ -18,7 +18,7 @@ const Projects = () => {
       category: 'residential',
       location: 'Padappai',
       description: 'A 4-bedroom home with modern design elements and ample space for nature to thrive.',
-      image: '/src/Srinivasans.jpeg',
+      image: '/Srinivasans.jpeg',
       completionDate: 'June 2024',
       area: '2,300 sq ft'
     },
@@ -29,7 +29,7 @@ const Projects = () => {
       category: 'residential',
       location: 'Maraimalai Nagar',
       description: 'Traditional design meets modern comfort in this carefully planned family residence.',
-      image: '/src/Laxmi Home.jpeg',
+      image: '/Laxmi Home.jpeg',
       completionDate: 'Planning Phase',
       area: '2,700 sq ft'
     }
