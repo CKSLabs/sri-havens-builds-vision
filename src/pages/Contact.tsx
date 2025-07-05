@@ -9,10 +9,12 @@ import { Label } from '@/components/ui/label';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted');
+  // Get the base URL for the current environment
+  const getBaseUrl = () => {
+    if (import.meta.env.DEV) {
+      return 'http://localhost:8080';
+    }
+    return 'https://srihavensconstructions.com';
   };
 
   return (
@@ -43,7 +45,10 @@ const Contact = () => {
                   <h2 className="font-heading text-2xl font-semibold text-foreground mb-6">
                     Send Us a Message
                   </h2>
-                  <form action="https://formsubmit.co/enquiry@srihavensconstructions.com" method="POST" className="space-y-6"> {/* enquiry@srihavensconstructions.com */ }
+                  <form action="https://formsubmit.co/enquiry@srihavensconstructions.com" method="POST" className="space-y-6">
+                    <input type="hidden" name="_next" value={`${getBaseUrl()}/#/thank-you`} />
+                    <input type="hidden" name="_subject" value="New Contact Form Submission" />
+                    {/* enquiry@srihavensconstructions.com */ }
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <Label htmlFor="firstName" className="font-body text-sm font-medium text-foreground">
@@ -176,7 +181,7 @@ const Contact = () => {
                   </Card>
 
                   {/* Phone */}
-                  {/* <Card className="border border-border hover:border-primary/30 transition-colors">
+                  <Card className="border border-border hover:border-primary/30 transition-colors">
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4">
                         <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -187,18 +192,18 @@ const Contact = () => {
                             Call Us
                           </h3>
                           <p className="font-body text-muted-foreground text-sm mb-2">
-                            Speak directly with our team about your construction project.
+                            Speak directly with us about your ideas.
                           </p>
                           <a 
                             href="tel:+94112345678"
                             className="font-body text-primary hover:text-primary/80 font-medium"
                           >
-                            +94 11 234 5678
+                            +91 99625 74474 /73
                           </a>
                         </div>
                       </div>
                     </CardContent>
-                  </Card> */}
+                  </Card>
 
                   {/* Location */}
                   {/* <Card className="border border-border hover:border-primary/30 transition-colors">
