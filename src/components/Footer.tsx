@@ -64,10 +64,10 @@ const Footer = () => {
                 Ready to build your dream home?
               </p>
               <a 
-                href="mailto:info@srihavens.com"
+                href="mailto:enquiry@srihavensconstructions.com"
                 className="block text-primary hover:text-primary/80 transition-colors font-body text-sm font-medium"
               >
-                info@srihavens.com
+                enquiry@srihavensconstructions.com
               </a>
             </div>
           </div>

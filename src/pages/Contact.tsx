@@ -170,7 +170,7 @@ const Contact = () => {
                             Send us your project details and we'll get back to you within 24 hours.
                           </p>
                           <a 
-                            href="mailto:info@srihavens.com"
+                            href="mailto:enquiry@srihavensconstructions.com"
                             className="font-body text-primary hover:text-primary/80 font-medium"
                           >
                             enquiry@srihavensconstructions.com
@@ -195,7 +195,7 @@ const Contact = () => {
                             Speak directly with us about your ideas.
                           </p>
                           <a 
-                            href="tel:+94112345678"
+                            href="tel:+919962574474"
                             className="font-body text-primary hover:text-primary/80 font-medium"
                           >
                             +91 99625 74474 /73
