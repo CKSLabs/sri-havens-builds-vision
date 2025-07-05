@@ -43,13 +43,14 @@ const Contact = () => {
                   <h2 className="font-heading text-2xl font-semibold text-foreground mb-6">
                     Send Us a Message
                   </h2>
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form action="https://formsubmit.co/enquiry@srihavensconstructions.com" method="POST" className="space-y-6"> {/* enquiry@srihavensconstructions.com */ }
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <Label htmlFor="firstName" className="font-body text-sm font-medium text-foreground">
                           First Name
                         </Label>
-                        <Input 
+                        <Input
+                          name="firstName"
                           id="firstName" 
                           type="text" 
                           required 
@@ -62,6 +63,7 @@ const Contact = () => {
                           Last Name
                         </Label>
                         <Input 
+                          name="lastName"
                           id="lastName" 
                           type="text" 
                           required 
@@ -76,6 +78,7 @@ const Contact = () => {
                         Email Address
                       </Label>
                       <Input 
+                        name="email"
                         id="email" 
                         type="email" 
                         required 
@@ -89,6 +92,7 @@ const Contact = () => {
                         Phone Number
                       </Label>
                       <Input 
+                        name="phone"
                         id="phone" 
                         type="tel" 
                         className="mt-1 font-body"
@@ -101,6 +105,7 @@ const Contact = () => {
                         Project Type
                       </Label>
                       <Input 
+                        name="projectType"
                         id="projectType" 
                         type="text" 
                         className="mt-1 font-body"
@@ -113,6 +118,7 @@ const Contact = () => {
                         Message
                       </Label>
                       <Textarea 
+                        name="message"
                         id="message" 
                         required 
                         className="mt-1 font-body min-h-[120px]"

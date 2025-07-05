@@ -27,10 +27,7 @@ const VisionMission = () => {
                 Our Vision
               </h3>
               <p className="font-body text-muted-foreground leading-relaxed">
-                To be the leading construction company that transforms dreams into reality, 
-                creating sustainable and beautiful homes that stand the test of time. We 
-                envision a future where every family has access to quality housing that 
-                reflects their unique lifestyle and aspirations.
+                To be the trusted name in crafting serene and elegant homes for modern families—where every brick echoes peaceful living.
               </p>
             </CardContent>
           </Card>
@@ -47,10 +44,7 @@ const VisionMission = () => {
                 Our Mission
               </h3>
               <p className="font-body text-muted-foreground leading-relaxed">
-                To deliver exceptional residential construction services through innovative 
-                design, superior craftsmanship, and unwavering commitment to quality. We 
-                strive to exceed client expectations while maintaining the highest standards 
-                of integrity, sustainability, and customer satisfaction.
+                At Sri Havens, we build more than homes—we craft havens of harmony and elegance. With a focus on quality, thoughtful design, and customer peace of mind, we deliver refined living experiences that reflect the aspirations of modern families.
               </p>
             </CardContent>
           </Card>
